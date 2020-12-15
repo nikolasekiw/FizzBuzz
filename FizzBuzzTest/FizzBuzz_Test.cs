@@ -34,29 +34,29 @@ namespace FizzBuzzTest
         [Fact]
         public void TestJazz()
         {
-            bool resultat = jf.SekvensMedSpec(4).Equals("Jazz");
-            Assert.True(resultat);
+            Assert.Equal("Jazz", jf.SekvensMedSpec(4));
+            Assert.Equal("Jazz", jf.SekvensMedSpec(8));
         }
         
         [Fact]
         public void TestFuzz()
         {
-            string resultat = jf.SekvensMedSpec(9);
-            Assert.Equal("Fuzz", resultat);  
+            Assert.Equal("Fuzz", jf.SekvensMedSpec(9));  
+            Assert.Equal("Fuzz", jf.SekvensMedSpec(18));
         }
 
         [Fact]
         public void TestJazzFuzz()
         {
-            string resultat = jf.SekvensMedSpec(36);
-            Assert.Equal("JazzFuzz", resultat);
+            Assert.Equal("JazzFuzz", jf.SekvensMedSpec(36));
+            Assert.Equal("JazzFuzz", jf.SekvensMedSpec(72));
         }
         
         [Fact]
         public void TestTilfeldigTall14()
         {
-            string resultat = jf.SekvensMedSpec(11);
-            Assert.Equal("11", resultat);
+            Assert.Equal("11", jf.SekvensMedSpec(11));
+            Assert.Equal("98", jf.SekvensMedSpec(98));
         }
     }
 }
