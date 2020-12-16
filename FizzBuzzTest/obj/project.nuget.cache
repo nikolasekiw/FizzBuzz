@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "i52UcOcL0yUsl1u0Jf67XdiMJS6Mk57USxiv/gciClVZWj3Ms0dwN8WmBjlZlTzlyD5L59NojVW2fTwaKPuBTw==",
+  "dgSpecHash": "3uxA33In20hryR0lplcbXB0ANu4+1gjNeO6jWSuXYb0bGSkMHa741rcXeeEX+WSfOJ6qdUK/3lzypkaoOAi0yw==",
   "success": true,
-  "projectFilePath": "/Users/nikolasekiw/Test3/FizzBuzz/FizzBuzzTest/FizzBuzzTest.csproj",
+  "projectFilePath": "/Users/nikolasekiw/RiderProjects/FizzBuzz/FizzBuzzTest/FizzBuzzTest.csproj",
   "expectedPackageFiles": [
     "/Users/nikolasekiw/.nuget/packages/coverlet.collector/1.2.0/coverlet.collector.1.2.0.nupkg.sha512",
     "/Users/nikolasekiw/.nuget/packages/microsoft.codecoverage/16.5.0/microsoft.codecoverage.16.5.0.nupkg.sha512",

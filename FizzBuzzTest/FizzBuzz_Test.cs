@@ -5,66 +5,62 @@ namespace FizzBuzzTest
 {
     public class FizzBuzz_Test
     {
-        Jazz_Fuzz jf = new Jazz_Fuzz();
+        SpillLogikk spill = new SpillLogikk();
 
         [Fact]
         public void TestFizz()
         {
-            var forventetResultat = "1 2 Fizz ";
-            string resultat = Fizz_Buzz.Resultat(3);
-            Assert.Equal(forventetResultat, resultat);
+            spill.regler.Add(3, "Fizz");
+            spill.regler.Add(5, "Buzz");
+            Assert.Equal("Fizz", spill.SekvensMedRegler(3));
         }
 
         [Fact]
         public void TestBuzz()
         {
-            var forventetResultat = "1 2 Fizz 4 Buzz ";
-            string resultat = Fizz_Buzz.Resultat(5);
-            Assert.Equal(forventetResultat, resultat);
+            spill.regler.Add(3, "Fizz");
+            spill.regler.Add(5, "Buzz");
+            Assert.Equal("Buzz", spill.SekvensMedRegler(5));
         }
         
         [Fact]
         public void TestFizzBuzz()
         {
-            var forventetResultat = "1 2 Fizz 4 Buzz Fizz 7 8 Fizz Buzz 11 Fizz 13 14 FizzBuzz ";
-            string resultat = Fizz_Buzz.Resultat(15);
-            Assert.Equal(forventetResultat, resultat);
+            spill.regler.Add(3, "Fizz");
+            spill.regler.Add(5, "Buzz");
+            Assert.Equal("FizzBuzz", spill.SekvensMedRegler(15));
         }
 
         [Fact]
         public void TestFuzz()
         {
-            jf.regler.Add(4, "Fuzz");
-            jf.regler.Add(9, "Jazz");
-            jf.regler.Add(36, "JazzFuzz");
-            Assert.Equal("Fuzz", jf.SekvensMedRegler(4));
+            spill.regler.Add(4, "Fuzz");
+            spill.regler.Add(9, "Jazz");
+            Assert.Equal("Fuzz", spill.SekvensMedRegler(4));
         }
         
         [Fact]
         public void TestJazz()
         {
-            jf.regler.Add(4, "Fuzz");
-            jf.regler.Add(9, "Jazz");
-            jf.regler.Add(36, "JazzFuzz");
-            Assert.Equal("Jazz", jf.SekvensMedRegler(9));  
+            spill.regler.Add(4, "Fuzz");
+            spill.regler.Add(9, "Jazz");
+            Assert.Equal("Jazz", spill.SekvensMedRegler(9));  
         }
 
         [Fact]
         public void TestJazzFuzz()
         {
-            jf.regler.Add(4, "Fuzz");
-            jf.regler.Add(9, "Jazz");
-            jf.regler.Add(36, "JazzFuzz");
-            Assert.Equal("JazzFuzz", jf.SekvensMedRegler(36));
+            spill.regler.Add(9, "Jazz");
+            spill.regler.Add(4, "Fuzz");
+            Assert.Equal("JazzFuzz", spill.SekvensMedRegler(36));
         }
         
         [Fact]
         public void TestTilfeldigTall14()
         {
-            jf.regler.Add(4, "Fuzz");
-            jf.regler.Add(9, "Jazz");
-            jf.regler.Add(36, "JazzFuzz");
-            Assert.Equal("11", jf.SekvensMedRegler(11));
+            spill.regler.Add(4, "Fuzz");
+            spill.regler.Add(9, "Jazz");
+            Assert.Equal("11", spill.SekvensMedRegler(11));
         }
     }
 }

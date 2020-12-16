@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/nikolasekiw/Test3/FizzBuzz/FizzBuzzTest/FizzBuzzTest.csproj": {}
+    "/Users/nikolasekiw/RiderProjects/FizzBuzz/FizzBuzzTest/FizzBuzzTest.csproj": {}
   },
   "projects": {
-    "/Users/nikolasekiw/Test3/FizzBuzz/FizzBuzz/FizzBuzz.csproj": {
+    "/Users/nikolasekiw/RiderProjects/FizzBuzz/FizzBuzz/FizzBuzz.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/nikolasekiw/Test3/FizzBuzz/FizzBuzz/FizzBuzz.csproj",
+        "projectUniqueName": "/Users/nikolasekiw/RiderProjects/FizzBuzz/FizzBuzz/FizzBuzz.csproj",
         "projectName": "FizzBuzz",
-        "projectPath": "/Users/nikolasekiw/Test3/FizzBuzz/FizzBuzz/FizzBuzz.csproj",
+        "projectPath": "/Users/nikolasekiw/RiderProjects/FizzBuzz/FizzBuzz/FizzBuzz.csproj",
         "packagesPath": "/Users/nikolasekiw/.nuget/packages/",
-        "outputPath": "/Users/nikolasekiw/Test3/FizzBuzz/FizzBuzz/obj/",
+        "outputPath": "/Users/nikolasekiw/RiderProjects/FizzBuzz/FizzBuzz/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/nikolasekiw/.nuget/NuGet/NuGet.Config"
@@ -56,14 +56,14 @@
         }
       }
     },
-    "/Users/nikolasekiw/Test3/FizzBuzz/FizzBuzzTest/FizzBuzzTest.csproj": {
+    "/Users/nikolasekiw/RiderProjects/FizzBuzz/FizzBuzzTest/FizzBuzzTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/nikolasekiw/Test3/FizzBuzz/FizzBuzzTest/FizzBuzzTest.csproj",
+        "projectUniqueName": "/Users/nikolasekiw/RiderProjects/FizzBuzz/FizzBuzzTest/FizzBuzzTest.csproj",
         "projectName": "FizzBuzzTest",
-        "projectPath": "/Users/nikolasekiw/Test3/FizzBuzz/FizzBuzzTest/FizzBuzzTest.csproj",
+        "projectPath": "/Users/nikolasekiw/RiderProjects/FizzBuzz/FizzBuzzTest/FizzBuzzTest.csproj",
         "packagesPath": "/Users/nikolasekiw/.nuget/packages/",
-        "outputPath": "/Users/nikolasekiw/Test3/FizzBuzz/FizzBuzzTest/obj/",
+        "outputPath": "/Users/nikolasekiw/RiderProjects/FizzBuzz/FizzBuzzTest/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/nikolasekiw/.nuget/NuGet/NuGet.Config"
@@ -78,8 +78,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "/Users/nikolasekiw/Test3/FizzBuzz/FizzBuzz/FizzBuzz.csproj": {
-                "projectPath": "/Users/nikolasekiw/Test3/FizzBuzz/FizzBuzz/FizzBuzz.csproj"
+              "/Users/nikolasekiw/RiderProjects/FizzBuzz/FizzBuzz/FizzBuzz.csproj": {
+                "projectPath": "/Users/nikolasekiw/RiderProjects/FizzBuzz/FizzBuzz/FizzBuzz.csproj"
               }
             }
           }

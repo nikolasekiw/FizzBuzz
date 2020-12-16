@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/nikolasekiw/Test3/FizzBuzz/FizzBuzz/FizzBuzz.csproj",
+      "projectUniqueName": "/Users/nikolasekiw/RiderProjects/FizzBuzz/FizzBuzz/FizzBuzz.csproj",
       "projectName": "FizzBuzz",
-      "projectPath": "/Users/nikolasekiw/Test3/FizzBuzz/FizzBuzz/FizzBuzz.csproj",
+      "projectPath": "/Users/nikolasekiw/RiderProjects/FizzBuzz/FizzBuzz/FizzBuzz.csproj",
       "packagesPath": "/Users/nikolasekiw/.nuget/packages/",
-      "outputPath": "/Users/nikolasekiw/Test3/FizzBuzz/FizzBuzz/obj/",
+      "outputPath": "/Users/nikolasekiw/RiderProjects/FizzBuzz/FizzBuzz/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/nikolasekiw/.nuget/NuGet/NuGet.Config"
