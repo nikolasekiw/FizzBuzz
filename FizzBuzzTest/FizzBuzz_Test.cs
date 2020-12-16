@@ -5,7 +5,7 @@ namespace FizzBuzzTest
 {
     public class FizzBuzz_Test
     {
-        private Jazz_Fuzz jf = new Jazz_Fuzz();
+        Jazz_Fuzz jf = new Jazz_Fuzz();
 
         [Fact]
         public void TestFizz()
@@ -22,7 +22,7 @@ namespace FizzBuzzTest
             string resultat = Fizz_Buzz.Resultat(5);
             Assert.Equal(forventetResultat, resultat);
         }
-
+        
         [Fact]
         public void TestFizzBuzz()
         {
@@ -39,14 +39,14 @@ namespace FizzBuzzTest
             jf.regler.Add(36, "JazzFuzz");
             Assert.Equal("Fuzz", jf.SekvensMedRegler(4));
         }
-
+        
         [Fact]
         public void TestJazz()
         {
             jf.regler.Add(4, "Fuzz");
             jf.regler.Add(9, "Jazz");
             jf.regler.Add(36, "JazzFuzz");
-            Assert.Equal("Jazz", jf.SekvensMedRegler(9));
+            Assert.Equal("Jazz", jf.SekvensMedRegler(9));  
         }
 
         [Fact]
@@ -57,7 +57,7 @@ namespace FizzBuzzTest
             jf.regler.Add(36, "JazzFuzz");
             Assert.Equal("JazzFuzz", jf.SekvensMedRegler(36));
         }
-
+        
         [Fact]
         public void TestTilfeldigTall14()
         {
