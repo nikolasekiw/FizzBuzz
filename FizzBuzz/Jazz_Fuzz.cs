@@ -11,16 +11,16 @@ namespace FizzBuzz
 
         public String SekvensMedSpec(int nummer)
         {
-            string verdi = "";
+            string resultat = "";
             List<string> resultatArray = new List<string>();
 
             foreach (KeyValuePair<int, string> keyValue in regler)
             {
                 if (nummer % keyValue.Key == 0) resultatArray.Add(keyValue.Value);
-                else if(!resultatArray.Any()) verdi = nummer.ToString();
+                else if(!resultatArray.Any()) resultat = nummer.ToString();
             }
-            foreach(var resultat in resultatArray) verdi = resultat;
-            return verdi;
+            foreach(var verdi in resultatArray) resultat = verdi;
+            return resultat;
         }
 
         public void StartSpill()
