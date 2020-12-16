@@ -9,7 +9,7 @@ namespace FizzBuzz
         public IDictionary<int, string> regler = new Dictionary<int, string>();
         public static IEnumerable<int> sekvens = Enumerable.Range(1, 100).Reverse();
 
-        public String SekvensMedSpec(int nummer)
+        public String SekvensMedRegler(int nummer)
         {
             string resultat = "";
             List<string> resultatArray = new List<string>();
@@ -25,7 +25,7 @@ namespace FizzBuzz
 
         public void StartSpill()
         {
-            foreach (var tall in sekvens) Console.WriteLine(SekvensMedSpec(tall));
+            foreach (var tall in sekvens) Console.WriteLine(SekvensMedRegler(tall));
         }
     }
 }

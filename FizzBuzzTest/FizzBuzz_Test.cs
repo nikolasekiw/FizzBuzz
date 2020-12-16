@@ -3,7 +3,6 @@ using Xunit;
 
 namespace FizzBuzzTest
 {
-
     public class FizzBuzz_Test
     {
         Jazz_Fuzz jf = new Jazz_Fuzz();
@@ -38,7 +37,7 @@ namespace FizzBuzzTest
             jf.regler.Add(4, "Fuzz");
             jf.regler.Add(9, "Jazz");
             jf.regler.Add(36, "JazzFuzz");
-            Assert.Equal("Fuzz", jf.SekvensMedSpec(4));
+            Assert.Equal("Fuzz", jf.SekvensMedRegler(4));
         }
         
         [Fact]
@@ -47,7 +46,7 @@ namespace FizzBuzzTest
             jf.regler.Add(4, "Fuzz");
             jf.regler.Add(9, "Jazz");
             jf.regler.Add(36, "JazzFuzz");
-            Assert.Equal("Jazz", jf.SekvensMedSpec(9));  
+            Assert.Equal("Jazz", jf.SekvensMedRegler(9));  
         }
 
         [Fact]
@@ -56,7 +55,7 @@ namespace FizzBuzzTest
             jf.regler.Add(4, "Fuzz");
             jf.regler.Add(9, "Jazz");
             jf.regler.Add(36, "JazzFuzz");
-            Assert.Equal("JazzFuzz", jf.SekvensMedSpec(36));
+            Assert.Equal("JazzFuzz", jf.SekvensMedRegler(36));
         }
         
         [Fact]
@@ -65,7 +64,7 @@ namespace FizzBuzzTest
             jf.regler.Add(4, "Fuzz");
             jf.regler.Add(9, "Jazz");
             jf.regler.Add(36, "JazzFuzz");
-            Assert.Equal("11", jf.SekvensMedSpec(11));
+            Assert.Equal("11", jf.SekvensMedRegler(11));
         }
     }
 }
