@@ -29,7 +29,7 @@ namespace FizzBuzz
             //Jeg ser derfor ikke behov for å iterere over alle verdiene når du bare er interessert den siste.
             //Den kunne man ha løst med resultatArray.LastOrDefault()
             //Hovedpoenget er at det er litt uryddig å fylle opp et array med verdier du ikke benytter.
-            //Trolig blir dette blir sikkert annerledes dersom du klarer å kode deg vekk fra bruk av kombinasjonsregler.
+            //Trolig blir dette annerledes dersom du klarer å kode deg vekk fra bruk av kombinasjonsregler.
             foreach (var verdi in resultatArray) resultat = verdi;
             return resultat;
         }
