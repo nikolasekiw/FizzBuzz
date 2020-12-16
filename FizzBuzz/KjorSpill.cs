@@ -17,7 +17,7 @@
             //I det eksemplet blir det en veldig manuell og kjedelig jobb for et menneske å
             //lage alle de 14 nye kombinasjonsregler. Et slikt sceanrio er også skjørt og utsatt for mennesklig feil.
             //Man kan også argumentere for at kombimasjoneregler er DRY/WET violation fordi du repeterer noe du allerede har gjort før.
-            //Dersom verdien for Fuzz skal endres til f.eks 5, av en annen utvikler enn dag, er det en mulighet 36-FizzBuzz feilaktig forblir stående urørt.
+            //Dersom verdien for Fuzz skal endres til f.eks 5, av en annen utvikler enn deg, er det en mulighet 36-FizzBuzz feilaktig forblir stående urørt.
             jf.regler.Add(36, "JazzFuzz");
 
             jf.StartSpill();
