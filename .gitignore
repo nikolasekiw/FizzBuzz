@@ -1,3 +1,4 @@
-*/obj
-*/bin
 /FizzBuzz/bin/
+/FizzBuzz/obj/
+/FizzBuzzTest/bin/
+/FizzBuzzTest/obj/
