@@ -34,7 +34,7 @@ namespace FizzBuzz
             return resultat;
         }
 
-        //Hva mener du om at metoden returnerer et resultatsatt og overlater presentasjon(Console.WriteLine) til kallende kode?
+        //Hva mener du om at metoden returnerer et resultatsett og overlater presentasjon(Console.WriteLine) til kallende kode?
         public void StartSpill()
         {
             foreach (var tall in sekvens) Console.WriteLine(SekvensMedRegler(tall));
