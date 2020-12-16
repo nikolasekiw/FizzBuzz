@@ -6,7 +6,7 @@ namespace FizzBuzz
 {
     public class Jazz_Fuzz : IFizzBuzz
     {
-        public static IDictionary<int, string> regler = new Dictionary<int, string>();
+        public IDictionary<int, string> regler = new Dictionary<int, string>();
         public static IEnumerable<int> sekvens = Enumerable.Range(1, 100).Reverse();
 
         public String SekvensMedSpec(int nummer)

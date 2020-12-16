@@ -7,11 +7,11 @@
             var fb = new Fizz_Buzz();
             fb.StartSpill();
 
-            Jazz_Fuzz.regler.Add(4, "Fuzz");
-            Jazz_Fuzz.regler.Add(9, "Jazz");
-            Jazz_Fuzz.regler.Add(36, "JazzFuzz");
-            
             var jf = new Jazz_Fuzz();
+            jf.regler.Add(4, "Fuzz");
+            jf.regler.Add(9, "Jazz");
+            jf.regler.Add(36, "JazzFuzz");
+            
             jf.StartSpill();
         }
     }
