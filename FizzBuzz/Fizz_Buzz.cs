@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -6,6 +6,7 @@ namespace FizzBuzz
 {
     public class Fizz_Buzz : IFizzBuzz
     {
+        //Supert at du bruker slike moderne features👍🙂
         public static IEnumerable<int> sekvens = Enumerable.Range(1, 100);
 
         public void StartSpill()
@@ -19,6 +20,8 @@ namespace FizzBuzz
             }
         }
 
+        //Denne metoden benyttes kun av tester og har således ingen verdi.
+        //Eller er det noe jeg overser?
         public static string Resultat(int nummer) {  
             string resultat = "";
             for (int i = 1; i < nummer+1; i++) {
