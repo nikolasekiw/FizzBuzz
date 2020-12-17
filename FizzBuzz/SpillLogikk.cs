@@ -16,9 +16,7 @@ namespace FizzBuzz
             {
                 if (nummer % kv.Key == 0) resultat += kv.Value;
             }
-            var svar = resultat;
-            if (svar != null) return svar;
-            return nummer.ToString();
+            return resultat ?? nummer.ToString();
         }
 
         public void StartSpill(IEnumerable<int> liste)
