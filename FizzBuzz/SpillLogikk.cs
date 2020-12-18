@@ -6,11 +6,10 @@ namespace FizzBuzz
     public class SpillLogikk
     {
         public IDictionary<int, string> regler = new Dictionary<int, string>();
-        public string sammensatteRegler = null;
         
         public String SekvensMedRegler(int nummer)
         {
-            string resultat = sammensatteRegler;
+            string resultat = null;
 
             foreach (KeyValuePair<int, string> kv in regler)
             {
