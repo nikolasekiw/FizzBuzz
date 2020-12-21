@@ -1,26 +1,16 @@
-using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace FizzBuzz
 {
-    public class SpillLogikk
+    public static class SpillLogikk
     {
-        public IDictionary<int, string> regler = new Dictionary<int, string>();
-        
-        public String SekvensMedRegler(int nummer)
-        {
-            string resultat = null;
+        internal static string SekvensMedRegler(int nummer, (int Divident, string Navn)[] regler)
+            => string.Join("", regler.Where(regel => nummer % regel.Divident == 0)
+                        .Select(regel => regel.Navn)
+                        .DefaultIfEmpty(nummer.ToString()));
 
-            foreach (KeyValuePair<int, string> kv in regler)
-            {
-                if (nummer % kv.Key == 0) resultat += kv.Value;
-            }
-            return resultat ?? nummer.ToString();
-        }
-
-        public void StartSpill(IEnumerable<int> liste)
-        {
-            foreach (var tall in liste) Console.WriteLine(SekvensMedRegler(tall));
-        }
+        public static IEnumerable<string> StartSpill(this IEnumerable<int> liste, (int, string)[] regler)
+            => liste.Select(tall => SekvensMedRegler(tall, regler));
     }
 }
