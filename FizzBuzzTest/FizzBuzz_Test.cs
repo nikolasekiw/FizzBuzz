@@ -5,62 +5,60 @@ namespace FizzBuzzTest
 {
     public class FizzBuzz_Test
     {
-        SpillLogikk spill = new SpillLogikk();
-
         [Fact]
         public void TestFizz()
         {
-            spill.regler.Add(3, "Fizz");
-            spill.regler.Add(5, "Buzz");
-            Assert.Equal("Fizz", spill.SekvensMedRegler(3));
+            var result = SpillLogikk.SekvensMedRegler(3, Regler.FizzBuzz);
+
+            Assert.Equal("Fizz", result);
         }
 
         [Fact]
         public void TestBuzz()
         {
-            spill.regler.Add(3, "Fizz");
-            spill.regler.Add(5, "Buzz");
-            Assert.Equal("Buzz", spill.SekvensMedRegler(5));
+            var result = SpillLogikk.SekvensMedRegler(5, Regler.FizzBuzz);
+
+            Assert.Equal("Buzz", result);
         }
-        
+
         [Fact]
         public void TestFizzBuzz()
         {
-            spill.regler.Add(3, "Fizz");
-            spill.regler.Add(5, "Buzz");
-            Assert.Equal("FizzBuzz", spill.SekvensMedRegler(15));
+            var result = SpillLogikk.SekvensMedRegler(15, Regler.FizzBuzz);
+
+            Assert.Equal("FizzBuzz", result);
         }
 
         [Fact]
         public void TestFuzz()
         {
-            spill.regler.Add(4, "Fuzz");
-            spill.regler.Add(9, "Jazz");
-            Assert.Equal("Fuzz", spill.SekvensMedRegler(4));
+            var result = SpillLogikk.SekvensMedRegler(4, Regler.JazzFuzz);
+
+            Assert.Equal("Fuzz", result);
         }
-        
+
         [Fact]
         public void TestJazz()
         {
-            spill.regler.Add(4, "Fuzz");
-            spill.regler.Add(9, "Jazz");
-            Assert.Equal("Jazz", spill.SekvensMedRegler(9));  
+            var result = SpillLogikk.SekvensMedRegler(9, Regler.JazzFuzz);
+
+            Assert.Equal("Jazz", result);
         }
 
         [Fact]
         public void TestJazzFuzz()
         {
-            spill.regler.Add(9, "Jazz");
-            spill.regler.Add(4, "Fuzz");
-            Assert.Equal("JazzFuzz", spill.SekvensMedRegler(36));
+            var result = SpillLogikk.SekvensMedRegler(36, Regler.JazzFuzz);
+
+            Assert.Equal("JazzFuzz", result);
         }
-        
+
         [Fact]
-        public void TestTilfeldigTall14()
+        public void TestTilfeldigTall11()
         {
-            spill.regler.Add(4, "Fuzz");
-            spill.regler.Add(9, "Jazz");
-            Assert.Equal("11", spill.SekvensMedRegler(11));
+            var result = SpillLogikk.SekvensMedRegler(11, Regler.JazzFuzz);
+
+            Assert.Equal("11", result);
         }
     }
 }
